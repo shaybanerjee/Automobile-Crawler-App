@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+	<html>
+   		<head>
+   			<title> AllenWon</title>
+   			
+		</head>
+	<style>
+		body {background: #e3e3e3; /* For browsers that do not support gradients */
+    	  background: -webkit-linear-gradient(#ffffff, #e3e3e3); /* For Safari 5.1 to 6.0 */
+    	  background: -o-linear-gradient(#ffffff, #e3e3e3); /* For Opera 11.1 to 12.0 */
+      	  background: -moz-linear-gradient(#ffffff, #e3e3e3); /* For Firefox 3.6 to 15 */
+    	  background: linear-gradient(#ffffff, #e3e3e3); /* Standard syntax */} 
+		.info-container {width: 76%;
+				
+						margin-left: -37px;
+						 border: 1px solid #d3d3d3;
+						 padding: 40px;
+						 padding-bottom: 60px;
+						 margin-bottom: 10px;
+						display: block;
+						height: 160px;
+						background-image {}}
+		
+		.price {float: right;
+				margin-top: 0px;
+				font-family: 'Open Sans', sans-serif;
+				font-size: 20px;
+				font-weight: 100;}
+			
+		.url {width: 50%; 
+			  margin: -30px auto 0 auto;}
+		
+		.enable-search-navigation-flag::after { 
+    				content: " - Click For Full Post on Kijiji.";
+    				font-family: 'Open Sans', sans-serif;
+    					font-weight: 100;}
+    	.enable-search-navigation-flag {font-family: 'Open Sans', sans-serif;
+    		font-weight: 100;}
+		
+		.location {margin-top: 10px;
+				   margin-bottom: 20px;}
+		.page{margin-top: 100px;} 
+		#header {width: 100%;
+				border: 2px solid #000000;
+				height: 200px;}
+		.resultItem {width: 76%;
+						 height: 80px;
+						margin-left: -37px;
+						 border: 1px solid #d3d3d3;
+						 padding-left: 40px;
+						 padding-right: 40px;
+						 padding-bottom: 40px;
+						 margin-bottom: 10px;
+						 padding-top: 70px;
+						 display: block;
+						height: 160px;}
+		.at_price {float: right;
+					margin-top: 20px;
+					font-weight: 100;
+					font-size: 20px;
+					font-family: 'Open Sans', sans-serif;}
+		.at_km {float: right;
+				margin-top: 70px;
+				margin-right: -130px;
+					font-weight: 100;
+					font-size: 20px;
+					font-family: 'Open Sans', sans-serif;}
+		.at_photoArea {margin-top: -57px;}
+		
+		.ResultDistance {margin-top: -74px;}
+		.at_details{margin-top: 50px;} 
+		.dealerLogoContainer {display: none;}
+		.compareArea {display: none;}
+		.saveToMyGarageArea {display: none;}
+		.carProofLink {display: none;} 
+		.resultTitle {font-size: 18px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 100;} 
+		.media {width: 76%;
+				margin-left: -37px;
+				border: 1px solid #d3d3d3;
+				padding-left: 40px;
+				padding-right: 40px;
+				padding-bottom: 40px;
+				padding-top: 10px;
+				margin-bottom: 10px;
+				height: 220px;
+				display: block;
+				}
+			.delta {float: right;
+				font-weight: 100;
+				margin-top: -28px;
+				margin-right: 20px;
+				margin-bottom: 64px;
+				font-size: 20px;} 
+				
+			.at_details {margin-top: 70px;}
+		
+		.l-column--large-4 {margin-top: 170px;
+							float: left;
+							}
+		.hN {margin-top: 30px;
+			font-size: 18px;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 100;
+		}
+		.at_km {margin-right: -80px;}
+						
+		.fit-img {display: none;}
+		.js-tooltip {display: none;}
+		.l-column--large-4 p {margin-top: -110px;}
+		span .price {display: none;}
+		#ListingRow0 {width: 76%;
+	
+				margin-left: -37px;
+				border: 1px solid #d3d3d3;
+				padding-left: 40px;
+				padding-right: 40px;
+				padding-bottom: 40px;
+				padding-top: 10px;
+				display: block;
+				height: 200px;
+						
+				margin-bottom: 10px;}
+		#ListingRow1 {width: 76%;
+				margin-left: -37px;
+				border: 1px solid #d3d3d3;
+				padding-left: 40px;
+				padding-right: 40px;
+				padding-bottom: 40px;
+				padding-top: 10px;
+				margin-bottom: 10px;
+				display: block;
+					height: 200px;}
+				.ListingCnt {text-decoration: none;
+							color: #000000;
+							}
+		.ListingRow0Ryt img {display: block;
+							margin-top: 70px;
+							margin-left: -10px;
+							display: none;}	
+		.ListingMore {display: none;}
+	.ListingRowHeadTxt {font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+							}
+		
+		#dnn_ctr437_SearchResult_GR_Itemlisting_ctl02_LblPrice {float: right;
+																font-size: 16px; 
+																font-weight: 100;
+																color: #000000;
+																margin-top: -20px;}
+		#dnn_ctr437_SearchResult_GR_Itemlisting_ctl02_Label1:after {content: " km"}
+		#dnn_ctr437_SearchResult_GR_Itemlisting_ctl02_lnkImgDealer {display:none;}
+		#dnn_ctr437_SearchResult_GR_Itemlisting_ctl23_LblPrice {float: right;
+																font-size: 16px; 
+																font-weight: 100;
+																color: #000000;
+																margin-top: -20px;}
+	
+		.ListingRow1Ryt img {display: block;
+							margin-top: 70px;
+							margin-left: -10px;
+							display: none;}		
+		.smallgreyTxt {display: none;}			
+		#dnn_ctr437_SearchResult_GR_Itemlisting_ctl23_lnkImgDealer {display: none;}	
+		.clearfix img {display: none;}								
+		.lazy {display: none;}
+		.spantip {display:none;}
+		.at_mainPhoto img {display: none;}
+		.lazyGalleryItem {display: none;}
+		.at_resultSimilarVehiclesLabel {display: none;}
+		.at_featuredListings {display: none;}
+		.jcarousel-skin-resultgallery {display: none;}
+		.more-searches li {display: none;}
+		.milli {margin-top: 83px;}
+		.fntBld {color: #000000;
+				text-decoration: none;
+		
+				} 
+		.row {width: 76%;
+			  height: 80px;
+			  margin-left: -37px;
+			  border: 1px solid #d3d3d3;
+			  padding-left: 40px;
+			  padding-right: 40px;
+			  padding-bottom: 30px;
+			  margin-bottom: 10px;
+			  padding-top: 20px;
+			  display: block;
+			  height: 3px;}
+		.price {color: #000000;}
+		h5 {font-weight: 100;
+			position: absolute;
+	
+	}
+		.soft-half--top {float: right;
+						margin-top: -96px;
+						font-family: 'Open Sans', sans-serif;
+						font-weight: 100;}
+		#nav {width: 100%;
+			  height: 30px;
+			  margin-top: 7px;
+			  border: 1px solid #000000;}		
+		li {display: inline-block;}
+		form {margin-top: -27px;
+			  margin-left: -33px;}
+		#choice1 {width: 200px;}
+		#choice2 {width: 200px;}
+		#choice3 {width: 100px;}
+		#choice4 {width: 200px;} 
+		#button {width: 150px;}
+	</style>
+<body> 
+<div id = "header"> 
+	
+</div>
+<div id = "nav">
+
+	<form action = "process.php" id ="form1" method = "post" name = "shayhirthdb"> 
+	<ul>
+	<li><p id ="carname"> 	
+			<select name = "carname" id = "choice1" /> 
+			<option value = "acura"> Acura </option> 
+			<option value = "audi"> Audi </option> 
+			<option value = "bmw"> BMW </option> 
+			<option value = "chevrolet"> Chevrolet </option> 
+			</select> 
+	</p> </li>
+		
+	<li><p id = "location"> 
+			<select name = "location" id = "choice2" /> 
+			<option value = "ottawa"> Ottawa </option> 
+			<option value = "montreal"> Montreal </option> 
+			<option value = "toronto"> Toronto </option> 
+			<option value = "vancouver"> Vancouver </option> 
+			</select> 	</p> </li>
+    <li><p id = "year"> 
+			<select name = "year" id = "choice3" /> 
+			<option value = "1990"> 1990 </option> 
+			<option value = "1991"> 1991 </option> 
+			<option value = "1992"> 1992 </option> 
+			<option value = "1993"> 1993 </option> 
+			</select> 	</p> </li>
+	<li><p id = "sort"> 
+		<select name = "sort" id = "choice4" /> 
+			<option value = "oldest"> Oldest-Newest </option> 
+			<option value = "newest"> Newest-Oldest </option> 
+			<option value = "lowest"> Lowest-Highest Price </option> 
+			<option value = "highest"> Highest-Lowest Price </option> 
+		</select> 
+	</p> </li>
+	<li><p> 
+		<input type = "submit" id = "button" value= "Search" /> </li>
+</form> 
+
+</div>
+<div class = "page">
+{% autoescape off %}{{ posting1|safe }}{% endautoescape %}
+
+</div>
+
+<script type = "text/javascript" src ="../static/jquery-3.0.0.min.js">  </script> 
+<script> 
+
+$( document ).ready() {
+$("a[href]").each(function() {
+		
+	 var kij = "http://www.kijiji.ca";
+     var value = $(this).attr('href');
+     var newhref = kij.concat(value);
+  	$(this).attr('href', newhref);
+    });
+}
+
+<script type="text/javascript">
+var elem = document.createElement("img");
+elem.src = "autotrader.png"
+elem.setAttribute("height", "768");
+elem.setAttribute("width", "1024");
+elem.setAttribute("alt", "Flower");
+var hold = document.getElementsByClassName("resultItem");
+for (var i; i<hold.length; i++) {
+	hold[i].appendChild("elem");
+	}
+</script>
+
+<script type="text/javascript">
+var elem = document.createElement("img");
+elem.src = "carpages.png"
+elem.setAttribute("height", "768");
+elem.setAttribute("width", "1024");
+elem.setAttribute("alt", "Flower");
+var hold = document.getElementsByClassName("media");
+for (var i; i<hold.length; i++) {
+	hold[i].appendChild("elem");
+	}
+
+
+</script>
+
+<script type="text/javascript">
+var elem = document.createElement("img");
+elem.src = "wheels.png"
+elem.setAttribute("height", "768");
+elem.setAttribute("width", "1024");
+elem.setAttribute("alt", "Flower");
+var hold = document.getElementsByClassName("resultItem");
+for (var i; i<hold.length; i++) {
+	hold[i].appendChild("elem");
+	}
+
+
+</script>
+</body>
+
+</html>

@@ -306,7 +306,7 @@
 			  margin-top: 7px;
 			  border: 1px solid #000000;
 			  background: #4863A0;
-			  margin-bottom: 20px;}		
+			  margin-bottom: -35px;}		
 		li {display: inline-block;}
 		form {margin-top: -27px;
 			  margin-left: -33px;}
@@ -341,7 +341,7 @@
 			margin-bottom: 5px;
 			margin-left: -6px;
 			border: 1px solid #000000;
-			margin-top: 40px;
+			margin-top: 23px;
 			background-color: #4863A0;
 		}
 		.topadd {
@@ -402,45 +402,146 @@
 			text-decoration: none;
 			font-weight: bold;
 		}
-		.description img {display:none;}
-		.vanish {
-				  display: none;
+				.description img {display:none;}
+				.vanish {
+					display: none;
 				}
-		.search {
-			position: absolute;
-		}
 				
-		.m {margin-right: 100px;
-			display: inline;}
 			
 	</style>
 <body> 
 <div id = "header"> 
-	<img class = "centerimg" src = "https://automobilescraper.herokuapp.com/AllenOne.png" alt = "Company Logo" height = "200"/> 
+	<img class = "centerimg" src = "http://localhost/pycharmprojects/AutoScraper/templates/AllenOne.png" alt = "Company Logo" height = "200"/> 
 	<h1> Feedback/Inquiries </h1> 
-	<a href = "https://ca.linkedin.com/in/shayon-banerjee-b61233b9" class = "switch"> <button> <p>Click Me! </p></button> </a>
+	<a href = "https://ca.linkedin.com/in/shayon-banerjee-b61233b9" > <button> <p>Click Me! </p></button> </a>
 
 
 </div>
 <div id = "nav">
-	<div class = "search"> 
-		<p class = "m"> {% include "auto.html" %} </p>
-	</div>
+
+	
+	<form action = "http://localhost/pycharmprojects/AutoScraper/templates/process.php" id ="form1" method = "post" name = "shayhirthdb"> 
+	<ul>
+	<li><p id ="carname"> 	
+			<select name = "carname" id = "choice1" /> 
+			<option value = "acura"> Acura </option> 
+			<option value = "audi"> Alfa Romeo </option> 
+			<option value = "bmw"> American Motors (AMC) </option> 
+			<option value = "aston martin"> Aston Martin </option> 
+			<option value = "audi"> Audi </option> 
+			<option value = "bentley"> Bentley </option> 
+			<option value = "bmw"> BMW </option> 
+			<option value = "buick"> Buick </option> 
+			<option value = "cadillac"> Cadillac </option> 
+			<option value = "caterham"> Caterham </option> 
+			<option value = "chevrolet"> Chevrolet </option> 
+			<option value = "chrysler"> Chrysler </option> 
+			<option value = "de soto"> De Soto </option> 
+			<option value = "delorean"> DeLorean </option> 
+			<option value = "dodge"> Dodge </option> 
+			<option value = "eagle"> Eagle </option> 
+			<option value = "ferrari"> Ferrari </option> 
+			<option value = "fisker"> Fisker </option> 
+			<option value = "ford"> Ford </option> 
+			<option value = "geo"> Geo </option> 
+			<option value = "gmc"> GMC </option> 
+			<option value = "hino"> Hino </option>
+			<option value = "honda"> Honda </option> 
+			<option value = "hummer"> Hummer </option> 
+			<option value = "hyundai"> Hyundai </option> 
+			<option value = "infiniti"> Infiniti </option> 
+			<option value = "international"> International </option> 
+			<option value = "isuzu"> Isuzu </option> 
+			<option value = "jaguar"> Jaguar </option> 
+			<option value = "jeep"> Jeep </option>  
+			<option value = "kia"> Kia </option>  
+			<option value = "lamborghini"> Lamborghini </option>  
+			<option value = "land rover"> Land Rover </option>  
+			<option value = "lexus"> Lexus </option>  
+			<option value = "lincoln"> Lincoln </option>  
+			<option value = "maserati"> Maserati </option>
+			<option value = "mayback"> Maybach </option>  
+			<option value = "mazda"> Mazda </option>  
+			<option value = "mclaren"> McLaren </option>  
+			<option value = "mercedes"> Mercedes-Benz </option>  
+			<option value = "mercury"> Mercury </option>    
+			<option value = "mg"> MG </option> 
+			<option value = "mini"> MINI </option> 
+			<option value = "mitsubishi"> Mitsubishi </option> 
+			<option value = "morgan"> Morgan </option> 
+			<option value = "morris"> Morris </option> 
+			<option value = "mv-1"> MV-1 </option> 
+			<option value = "nissan"> Nissan </option> 
+			<option value = "oldsmobile"> Oldsmobile </option> 
+			<option value = "plymouth"> Plymouth </option> 
+			<option value = "pontiac"> Pontiac </option> 
+			<option value = "porsche"> Porsche </option> 
+			<option value = "ram"> Ram </option> 
+			<option value = "renault"> Renault </option> 
+			<option value = "rolls-royce"> Rolls-Royce </option> 
+			<option value = "saab"> Saab </option> 
+			<option value = "saleen"> Saleen </option> 
+			<option value = "saturn"> Saturn </option> 
+			<option value = "scion"> Scion </option> 
+			<option value = "shelby"> Shelby </option> 
+			<option value = "smart"> Smart </option> 
+			<option value = "sterling"> Sterling </option> 
+			<option value = "studebaker"> Studebaker</option> 
+			<option value = "subaru"> Subaru </option> 
+			<option value = "suzuki"> Suzuki </option> 
+			<option value = "tesla"> Tesla </option> 
+			<option value = "toyota"> Toyota </option> 
+			<option value = "triumph"> Triumph </option> 
+			<option value = "volkswagen"> Volkswagen </option> 
+			<option value = "volvo"> Volvo </option> 
+			<option value = "willys"> Willys </option> 
+
+			</select> 
+	</p> </li>
+	<li> <p> 
+		<select class = "vanish" name = "location"> 
+			<option value = "toronto"> </option>
+		</select> 
+	</p> </li>
+	<li><p> 
+	<li> <p> 
+		<select class = "vanish"  name = "year"> 
+			<option value = "1997"> </option>
+		</select> 
+	</p> </li>
+		<li> <p> 
+		<select class = "vanish" name = "sort"> 
+			<option value = "oldest"> </option>
+		</select> 
+	</p> </li>
+	<li><p> 
+ <input type = "submit" id = "button" value= "DUMP" /> </li> 
+</form> 
 <div class = "menu">
 	
 </div>
 <div class = "topadd">
-
-
+<div class = "add" > 
+	<a href = "http://donatecar.ca/?gclid=COPK5oOoiNECFQQpaQodDN4DZw"> <img src = "http://localhost/pycharmprojects/AutoScraper/templates/dcar.png" alt = "kars-4-kids add" /> </a>  
+	<a href = "http://www.kars4kids.org/en-ca/ppc/brand.asp?source=google&medium=cpc&campaign=Brand-Terms&adgroup=&keyword=kars%20for%20kids&matchtype=e&device=c&invsrc=k4kca-ggl&st-t=google&gclid=CInkupGoiNECFQkHaQodycQE4A"> <img src = "http://localhost/pycharmprojects/AutoScraper/templates/k4k.jpg" class = "img1"\> </a>
+	<a href = "https://www.kidney.ca/kidneycar/"> <img src = "http://localhost/pycharmprojects/AutoScraper/templates/kcar.png" class = "img2"/></a>
+	<a href = "http://www.redcross.ca/yourgift?gclid=CK_k3sSoiNECFQ6HaQodaFsGWg#help"> <img src = "http://localhost/pycharmprojects/AutoScraper/templates/cred.png" class = "img3"/></a>
+	<a href = "http://www.charitycar.ca/"> <img src = "http://localhost/pycharmprojects/AutoScraper/templates/charcar.png" class = "img4"/></a>
+	<a href = "http://carheaven.ca/"> <img src = "http://localhost/pycharmprojects/AutoScraper/templates/heaven.png" class = "img5"/></a>
+	<a href = "http://www.cancer.ca/en/donate/?region=on&s_src=GoogleGrants&s_subsrc=MainPage&gclid=CNavm-OoiNECFc64wAodlRwNQA"> <img src = "http://localhost/pycharmprojects/AutoScraper/templates/cancer.png" class = "img6"/></a>
 </div>
 
 </div>
-</div<
+
 	  
   <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
 
       <link rel="stylesheet" href="css/style.css">
 
+  
+</head>
+
+<body>
   
 <div class="social-buttons"><a class="social-button facebook" href="#"><i class="fa fa-facebook"></i></a><a class="social-button twitter" href="#"><i class="fa fa-twitter"></i></a><a class="social-button google" href="#"><i class="fa fa-google"></i></a><a class="social-button dribbble" href="#"><i class="fa fa-dribbble"></i></a><a class="social-button skype" href="#"><i class="fa fa-skype"></i></a>
 </div>
@@ -453,7 +554,7 @@
 	 
 </div>
 <div class = "page">
-	{% autoescape off %}{{ test|safe }}{% endautoescape %} 
+	{% autoescape off %}{{ posting1|safe }}{% endautoescape %} 
 </div>
 
 <script type = "text/javascript" src ="../static/jquery-3.0.0.min.js">  </script> 
@@ -492,8 +593,6 @@
 		arr[i].src = cpages + arr[i].src.substring(21);
 	
 	} 
-	var val = document.getElementsByClassName('switch');
-	val[0].href = "https://ca.linkedin.com/in/shayon-banerjee-b61233b9";
 
 }
 </script>
