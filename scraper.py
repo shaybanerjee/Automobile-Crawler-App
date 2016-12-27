@@ -143,7 +143,7 @@ def blank():
 
 @app.route('/')
 def first_page():
-    return render_template("auto.html")
+    return render_template("index.html")
 
 @app.route('/', methods = ['POST'])
 def fn():

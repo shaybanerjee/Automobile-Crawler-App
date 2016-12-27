@@ -1,24 +1,190 @@
 <!DOCTYPE html>
-<html >
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- HEAD SECTION -->
 <head>
-  <meta charset="UTF-8">
-  <title>Stylish Social Buttons</title>
-  
-  
-  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-
-      <link rel="stylesheet" href="css/style.css">
-
-  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>AllenOne Automobile</title>
+    <!--GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!--BOOTSTRAP MAIN STYLES -->
+    <link href="../static/assets/css/bootstrap.css" rel="stylesheet" />
+    <!--FONTAWESOME MAIN STYLE -->
+    <link href="../static/assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--CUSTOM STYLE -->
+    <link href="../static/assets/css/style.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 </head>
+<style> 
+	.link {
+		color: #ffffff;
+	}
+</style>
+    <!--END HEAD SECTION -->
+<body>   
+     <!-- NAV SECTION -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">AllenOne</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#header-section">HOME</a></li>
+                    <li><a href="https://www.linkedin.com/in/shayon-banerjee-b61233b9?trk=hp-identity-photo#notifications">CONTACT</a></li>
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+     <!--END NAV SECTION -->
+     <!-- HEADER SECTION -->
+    <div id="header-section" >
+          <div class="container">
+        	
+            <div class="row main-top-margin">
+                <div class="col-md-6 col-md-offset-3">
 
-<body>
-  
-<div class="social-buttons"><a class="social-button facebook" href="#"><i class="fa fa-facebook"></i></a><a class="social-button twitter" href="#"><i class="fa fa-twitter"></i></a><a class="social-button google" href="#"><i class="fa fa-google"></i></a><a class="social-button dribbble" href="#"><i class="fa fa-dribbble"></i></a><a class="social-button skype" href="#"><i class="fa fa-skype"></i></a>
+                    <div class="text-center">
+                      {% include "auto.html" %}
+                
+                          </i>
+                            <br />                            
+                       
+                    </div>
+                </div>
+            </div>
+                  <div class="row main-low-margin">
+                <div class="col-md-12">
+
+                    <div class="text-center">
+                        <h3 class="head-line"> All The Best Deals In One Location!</h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div> 
+      <!--END HEADER SECTION -->
+   
+     <!-- ABOUT SECTION -->
+      <div id="about-section" class="section" >
+        <div class="container" >
+          
+               
+            <div class="row main-low-margin">
+                <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1" >
+                    <h1>What is AllenOne?</h1>
+                    <h5>
+                    	AllenOne is a Python Scraping/Crawler Application developed by Shayon Banerjee, a Computer Science student at the University of Waterloo.
+                    	AllenOne removes postings from popular websites, such as: kijiji, wheels, carpages, craigslist, and autotrader, and dynamically feeds them to a webpage. The postings are scraped live
+                    	and are provided to users on a well designed, easy-to-use webside, designed and maintained by Shayon Banerjee. Each car posting will contain an image of the car being viewed, a link to the actual posting; allowing users
+                    	to pursue business, a description of the car, and price and kilometer details.                        
+                    </h5>
+                </div>
+            </div>
+           
+            
+        </div>
+    </div>
+
+    <div class="container"  >
+        <div class="row main-low-margin text-center" >
+                <div class="col-md-4 col-sm-4" >
+                    <i class="fa fa-flask fa-5x color-brown"></i>
+                    <h3>Disruptive</h3>
+                    <p>
+                        AllenOne was created with the desire to facilitate the search for a car, by bringing all the adds from the most visited car websites in Toronto onto one webpage.                    </p>
+                </div>               
+                    <div class="col-md-4 col-sm-4" >
+                    <i class="fa fa-pencil fa-5x color-blue"></i>
+                    <h3>Easy to navigate</h3>
+                    <p>
+                        By simply selecting a car using the form above and pressing Dump, you will be redirect to a page containing all of the adds regarding the selected car in Toronto. 
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-4" >
+                    <i class="fa fa-thumbs-up fa-5x color-black"></i>
+                    <h3>WELL DOCUMENTED</h3>
+                    <p>
+                       	The source code for the python scraper and the web design can all be accessed by following the github link on the contact page. 
+                    </p>
+                </div>
+            </div>
+    </div>
+    <div class="space-bottom"></div>
+        <!--END ABOUT SECTION -->
+
+    <!--CONTACT SECTION -->
+     <div id="contact-section" class="section" >
+        <div class="container" >
+          
+               
+            <div class="row main-low-margin">
+                <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1" >
+                    <h1>Contact Me </h1>
+                    <h5>
+                      	Email: s23baner@uwaterloo.ca	
+                    </h5>
+                    <h5>
+                    	LinkedIn: <a class = "link" href = "https://www.linkedin.com/in/shayon-banerjee-b61233b9?trk=hp-identity-photo#notifications"> Shayon Banerjee </a>
+                    </h5>
+                    <h5>
+                    	GitHub: <a class = "link" href = "https://github.com/shaybanerjee?tab=repositories"> Shayon Banerjee </a>
+                    </h5>
+                </div>
+            </div>
+         
+            
+        </div>
+    </div>
 </div>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+   <div class="space-top"></div>
+    <!--END CONTACT SECTION --> 
+      <!--FOOTER SECTION -->
+    
+      <div class="text-center"  id="footer" >
+               
+                      <a href="#"><i class="fa fa-facebook-square fa-3x color-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square fa-3x color-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google-plus-square fa-3x color-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-linkedin-square fa-3x color-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-pinterest-square fa-3x color-pinterest"></i></a>
+          <br /><br />
 
-    <script src="js/index.js"></script>
-
+         
+            </div>
+         
+    <!--END FOOTER SECTION --> 
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY LIBRARY -->
+    <script src="../static/assets/js/jquery.js"></script>
+    <!-- CORE BOOTSTRAP LIBRARY -->
+    <script src="../static/assets/js/bootstrap.min.js"></script>
+     <!-- PARALLAX SCRIPTS-->
+     <script src="../static/assets/js/scrolly-master/jquery.scrolly.js"></script>
+       <!-- CUSTOM SCRIPT-->  
+    <script src="../static/assets/js/custom.js"></script>
+    
 </body>
 </html>
