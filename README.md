@@ -7,6 +7,6 @@ Interactive Website has been deployed on Heroku and can be accessed through the 
 
 Setup: 
 
-1) Download Python, Flask, BeautifulSoup, and Mechanize. 
-2) Download XAMPP for to lauch app on localhost. 
-3) Download a Python IDE, such as pycharm. 
+1. Download Python, Flask, BeautifulSoup, and Mechanize. </br>
+2. Download XAMPP for to lauch app on localhost. </br>
+3. Download a Python IDE, such as pycharm. 
