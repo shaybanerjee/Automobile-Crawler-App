@@ -2,6 +2,27 @@
 	<html>
    		<head>
    			<title> AllenWon</title>
+   			    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>AllenOne Automobile</title>
+    <!--GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!--BOOTSTRAP MAIN STYLES -->
+    <link href="../static/assets/css/bootstrap.css" rel="stylesheet" />
+    <!--FONTAWESOME MAIN STYLE -->
+    <link href="../static/assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--CUSTOM STYLE -->
+    <link href="../static/assets/css/style.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
    			
 		</head>
 	<style>
@@ -405,40 +426,72 @@
 		.m {margin-right: 100px;
 			display: inline;}
 			
+				.link {
+		color: #ffffff;
+	}
+	.email_tag {color: #fff;}
+	.move-up {display: none;}
+	.moveup {margin-top: -100px;}
+	.text-center {margin-top: -20px;}
+	.page {}
 	</style>
-<body> 
-<div id = "header"> 
-	<h1> Feedback/Inquiries </h1> 
-	<a href = "https://ca.linkedin.com/in/shayon-banerjee-b61233b9" class = "switch"> <button> <p>Click Me! </p></button> </a>
+<body>   
+     <!-- NAV SECTION -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">AllenOne</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#header-section">HOME</a></li>
+                    <li><a href="https://www.linkedin.com/in/shayon-banerjee-b61233b9?trk=hp-identity-photo#notifications">CONTACT</a></li>
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+     <!--END NAV SECTION -->
+     <!-- HEADER SECTION -->
+    <div id="header-section" >
+          <div class="container">
+        	
+            <div class="row main-top-margin">
+                <div class="col-md-6 col-md-offset-3">
 
+                    <div class="text-center">
+                      
+                      	{% include "auto.html" %}
+                
+                          </i>
+                            <br />                            
+                       
+                    </div>
+                </div>
+            </div>
+                  <div class="row main-low-margin">
+                <div class="col-md-12">
+					
+                    <div class="text-center">
+                    	<div class = "moveup"> <img src = "../static/lambo.png" alt = "" height = "300"> </div>
+                        <h3 class="head-line move-up"> All The Deals, One Spot.</h3>
 
-</div>
-<div id = "nav">
-	<div class = "search"> 
-		<p class = "m"> {% include "auto.html" %} </p>
-	</div>
-<div class = "menu">
-	
-</div>
-<div class = "topadd">
-	<div class = "add" > 
-</div>
-
-</div>
-
-</div>
-</div<
-
-
-	 
-</div>
-<div class = "adds">
-	 
-</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div> 
 <div class = "page">
 	{% autoescape off %}{{ test|safe }}{% endautoescape %} 
 </div>
 <script> 
+	window.onload = function() {
 	var kij = "http://www.kijiji.ca"; 
 	var wheels = "http://vehicles.wheels.ca";
 	var carpages = "https://www.carpages.ca";  
