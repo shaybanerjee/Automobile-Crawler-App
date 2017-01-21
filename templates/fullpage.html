@@ -2,29 +2,13 @@
 	<html>
    		<head>
    			<title> AllenWon</title>
-   			    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!--[if IE]>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <![endif]-->
-    <title>AllenOne Automobile</title>
-    <!--GOOGLE FONT -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <!--BOOTSTRAP MAIN STYLES -->
-    <link href="../static/assets/css/bootstrap.css" rel="stylesheet" />
-    <!--FONTAWESOME MAIN STYLE -->
-    <link href="../static/assets/css/font-awesome.min.css" rel="stylesheet" />
-    <!--CUSTOM STYLE -->
-    <link href="../static/assets/css/style.css" rel="stylesheet" />
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-   			
-	</head>
+   		    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+ 		    <link href="../static/assets/css/bootstrap.css" rel="stylesheet" />
+ 
+ 		    <link href="../static/assets/css/font-awesome.min.css" rel="stylesheet" />
+    
+    		<link href="../static/assets/css/style.css" rel="stylesheet" />
+		</head>
 	<style>
 		body {background: #e3e3e3; /* For browsers that do not support gradients */
     	  background: -webkit-linear-gradient(#ffffff, #e3e3e3); /* For Safari 5.1 to 6.0 */
@@ -425,18 +409,11 @@
 				
 		.m {margin-right: 100px;
 			display: inline;}
+			#nav {margin-top: 55px;}
 			
-				.link {
-		color: #ffffff;
-	}
-	.email_tag {color: #fff;}
-	.move-up {display: none;}
-	.moveup {margin-top: -100px;}
-	.text-center {margin-top: -20px;}
-	.page {}
 	</style>
-<body>   
-     <!-- NAV SECTION -->
+<body> 
+
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -456,26 +433,29 @@
            
         </div>
     </div>
-     <!--END NAV SECTION -->
-     <!-- HEADER SECTION -->
-    <div id="header-section" >
-          <div class="container">
-        	
-            <div class="row main-top-margin">
-                <div class="col-md-6 col-md-offset-3">
 
-                    <div class="text-center">
-                      
-                      	{% include "auto.html" %}
-                
-                          </i>
-                            <br />                            
-                       
-                    </div>
-                </div>
-            </div>
-       
-    </div> 
+<div id = "nav">
+	<div class = "search"> 
+		<p class = "m"> {% include "auto.html" %} </p>
+	</div>
+<div class = "menu">
+	
+</div>
+<div class = "topadd">
+	<div class = "add" > 
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+	 
+</div>
+<div class = "adds">
+	 
+</div>
 <div class = "page">
 	{% autoescape off %}{{ test|safe }}{% endautoescape %} 
 </div>
