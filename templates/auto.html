@@ -4,9 +4,16 @@
 			.this {margin-left: 40px;
 					margin-top: 13px;
 					display: block;}
-			#loadGif {display:none;}
+		
 			
 		</style>
+		<script type="text/javascript">
+	  
+	  		var value = getElementById('');
+    		function showGif(){
+       		 document.getElementById('loadGif').style.visibility="visible";
+    		}
+    </script> 
 	<body>
 	<div class = "home"> 
 		
@@ -86,19 +93,11 @@
 				<option value = "volvo"> Volvo </option> 
 				<option value = "willys"> Willys </option> 	
 			</select> 
-		    <button onclick="showGif"> <a href = "fullpage.html"> <input type = "submit" value = "DUMP" /></a> </button>
+		     <button onclick="showGif()"> <a href = "fullpage.html"> <input type = "submit" value = "DUMP" /></a> </button> 
 		</form> 
-		<img id = "loadGif" src = "../static/default.gif" /> 
+		
+		<img id = "loadGif" src = "../static/default.gif" style="visibility:hidden"/> 
 		</div>
 	</body>
-	  <script type="text/javascript">
-	  
-    function showGif(){
-        document.getElementById('loadGif').style.visibility="visible";
-    }
-
-    -->
-
-    </script> 
 		
 </html> 
