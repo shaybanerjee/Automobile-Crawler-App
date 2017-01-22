@@ -4,6 +4,7 @@
 			.this {margin-left: 40px;
 					margin-top: 13px;
 					display: block;}
+			#loadGif {display:none;}
 			
 		</style>
 	<body>
@@ -85,8 +86,19 @@
 				<option value = "volvo"> Volvo </option> 
 				<option value = "willys"> Willys </option> 	
 			</select> 
-		    <a href = "fullpage.html"> <input type = "submit" value = "DUMP" /> </a>
+		    <a href = "fullpage.html"> <button onclick="showGif"> <input type = "submit" value = "DUMP" /> </button></a>
 		</form> 
+		<img id = "loadGif" src = "../static/default.gif" /> 
 		</div>
 	</body>
+	  <script type="text/javascript">
+	  
+    function showGif(){
+        document.getElementById('loadGif').style.visibility="visible";
+    }
+
+    -->
+
+    </script> 
+		
 </html> 
